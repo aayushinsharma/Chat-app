@@ -1,0 +1,29 @@
+.App {
+  height: 100vh;
+  display: flex;
+}
+
+.chat-container {
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.message-bubble-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.message-bubble-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.room-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.room-active {
+  background-color: #dbeafe;
+  border-left: 4px solid #3b82f6;
+}
